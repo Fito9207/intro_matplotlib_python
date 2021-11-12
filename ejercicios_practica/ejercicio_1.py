@@ -27,6 +27,15 @@ if __name__ == '__main__':
     for i in x:
         y.append(i**2)
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
+    ax.plot(x, y , c ='green', label = 'y=x**2' )
+    ax.set_title("Parábola")
+    ax.legend()
+    ax.grid (ls='dashed')
+    plt.show()
+
     # Alumno: Crear una "figura" y crear un "ax" con add_subplot
     # Graficar el "line plot" de "y" en función de "x"
 

@@ -53,5 +53,32 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+   
+    fig= plt.figure()
+    ax1= fig.add_subplot(2, 2, 1)
+    ax2= fig.add_subplot(2, 2, 2)
+    ax3= fig.add_subplot(2, 2, 3)
+    ax4= fig.add_subplot(2, 2, 4)
 
+    ax1.plot(x, y1, color="red", label="y=x**2")
+    ax1.grid(ls="dotted")
+    ax1.legend()
+    
+    ax2.plot(x, y2, color="cyan", label="y=x**3")
+    ax2.grid(ls="dashed")
+    ax2.legend()
+    
+    ax3.scatter(x, y3, color="limegreen", label="y=x**4")
+    ax3.grid()
+    ax3.legend()
+    
+    ax4.scatter(x, y4, color="purple", label="y=sqrt(x)")
+    ax4.grid(ls="dashdot")
+    ax4.legend()
+
+    plt.show()
+
+    
+
+    
     print("terminamos")

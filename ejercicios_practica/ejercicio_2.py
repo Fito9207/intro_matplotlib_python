@@ -38,6 +38,7 @@ if __name__ == '__main__':
     # Alumno: Realizar un gráfico que representen las dos funciones
     # Para ello se debe llamar dos veces a "plot" con el mismo "ax"
 
+    
     # Se debe colocar en la leyenda la función que representa
     # cada función
 
@@ -45,5 +46,15 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+
+    fig = plt.figure()
+    ax = fig.add_subplot()
+ 
+    ax.plot(x, y1, color='k', label= "y1 = x**2")
+    ax.plot(x, y2, color='c', label= "y2 = x**3")
+    ax.set_ylabel("eje y")
+    ax.set_xlabel("eje x")
+    ax.legend()
+    plt.show()
 
     print("terminamos")
